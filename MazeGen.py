@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 14 22:17:28 2022
-
-@author: hugo_
-"""
-
-
 
 
 #Librerias a utilizar 
@@ -33,15 +25,14 @@ from skimage.morphology import skeletonize
 # plt.show()
 
 #Lectura de imagen en formato png
-img = io.imread("resultado_MazeGray.png")
 
-# img_gris = color.rgb2gray(img)
-#Se muestra la img
-# io.imshow(img)
+
+def busquedaBFS(imagen):
+    
+    img = io.imread(imagen)
 
 #Se muestra el camino para un punto
 
-def path1():
     print("***Pasos para encontrar el camino 1")
 
     x0,y0 = 460,460
@@ -143,10 +134,7 @@ def path1():
     plt.imshow(img)
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
 
-# path1()
 
-
-def path2():
     print("***Pasos para encontrar el camino 2***")
 
     x0,y0 = 460,460
@@ -248,8 +236,4 @@ def path2():
     plt.imshow(img)
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
     
-
-path1()
-path2()
-
 

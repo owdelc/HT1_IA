@@ -1,3 +1,9 @@
+#se importan las funciones
+from MazeGen import busquedaBFS
+from discretizar import discretizacion
+
+
+#Funcion para manejar entradas de menu 
 def numEnt():
     correcto = False
     num = 0
@@ -12,6 +18,7 @@ def numEnt():
 salir = False
 opcion = 0
 
+#Menu de opciones
 while (salir != True):
   print("*** Bienvenido a Maze Solver ***")
   print("1. BFS")
@@ -22,12 +29,15 @@ while (salir != True):
 
   if opcion == 1:
     print('*** Algoritmo BFS ***\n')
-    
+    archivo = input("Ingrese el nombre del archivo: ")
+    discretizacion(archivo)
+    nuevo_archivo = "resultado_" + archivo
+    busquedaBFS(nuevo_archivo)
 
    
   elif opcion == 2:
     print('*** Algoritmo DFS ***\n')
-    1
+    
 
   elif opcion == 3:
     print('*** Algoritmo A-Star ***\n')
