@@ -33,7 +33,8 @@ from skimage.morphology import skeletonize
 # plt.show()
 
 #Lectura de imagen en formato png
-img = io.imread("MazeGray.png")
+img = io.imread("resultado_MazeGray.png")
+
 # img_gris = color.rgb2gray(img)
 #Se muestra la img
 # io.imshow(img)

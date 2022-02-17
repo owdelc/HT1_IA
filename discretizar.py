@@ -22,5 +22,5 @@ def discretizacion(imagen):
     filename="resultado_" + imagen 
     resultado.save(filename)
 
- 
+
 
