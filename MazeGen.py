@@ -6,6 +6,7 @@ import numpy as np
 from skimage import color
 from skimage import io
 from skimage.morphology import skeletonize
+from PIL import Image
 
 # img = 'MazeGray.png'
 # rgb_img = plt.imread(img)
@@ -133,6 +134,7 @@ def busquedaBFS(imagen):
     plt.figure(figsize=(14,14))
     plt.imshow(img)
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
+    plt.savefig('route1_'+imagen)
 
 
     print("***Pasos para encontrar el camino 2***")
@@ -235,5 +237,6 @@ def busquedaBFS(imagen):
     plt.figure(figsize=(14,14))
     plt.imshow(img)
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
+    plt.savefig('route2_'+imagen)
     
 
