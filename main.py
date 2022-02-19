@@ -1,7 +1,9 @@
 #se importan las funciones
 from MazeGen import busquedaBFS
 from discretizar import discretizacion
-
+import matplotlib.pyplot as plt
+from Djikstra import ALgoritmo_Djikstra, dibujar_camino
+import cv2
 
 #Funcion para manejar entradas de menu 
 def numEnt():
@@ -37,10 +39,21 @@ while (salir != True):
    
   elif opcion == 2:
     print('*** Algoritmo DFS ***\n')
-    
+    #No se logro implementar
 
   elif opcion == 3:
     print('*** Algoritmo A-Star ***\n')
+    
+    archivo = input("Ingrese el nombre del archivo: ")    
+    imagen = cv2.imread(archivo)
+    resultado = ALgoritmo_Djikstra(imagen,(460,460),(500,80))
+    dibujar_camino(imagen, resultado)
+    plt.imshow(imagen)
+    plt.show()
+    
+    
+
+    
 
   elif opcion == 4:
 

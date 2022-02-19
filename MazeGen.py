@@ -36,8 +36,17 @@ def busquedaBFS(imagen):
 
     print("***Pasos para encontrar el camino 1")
 
+    #x0,y0 = 460,460
+    #x1,y1 = 90, 210
+    
     x0,y0 = 460,460
-    x1,y1 = 90,210
+    x1,y1 = 500,80
+    
+    #x0,y0 = 500,510
+    #x1,y1 = 60,62
+    
+    #x0,y0 = 139,441
+    #x1,y1 = 171,369   
     
     plt.plot(x0,y0,'gx',markersize = 7)
     plt.plot(x1,y1,'rx',markersize = 7)
@@ -136,7 +145,7 @@ def busquedaBFS(imagen):
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
     plt.savefig('route1_'+imagen)
 
-
+"""
     print("***Pasos para encontrar el camino 2***")
 
     x0,y0 = 460,460
@@ -239,4 +248,4 @@ def busquedaBFS(imagen):
     plt.plot(path_x,path_y, 'r-', linewidth = 15)
     plt.savefig('route2_'+imagen)
     
-
+"""

@@ -1,3 +1,10 @@
+"""
+
+Inspirado en el codigo de: https://towardsdatascience.com/convert-photo-into-pixel-art-using-python-d0b9bd235797
+
+"""
+
+
 from PIL import Image
 import matplotlib.pyplot as plt
 
@@ -23,6 +30,9 @@ def discretizacion(imagen):
     resultado.save(filename)
 
     print("*** Discretizacion exitosa ***")
+
+    plt.imshow(resultado)
+    plt.show()
 
 
 
